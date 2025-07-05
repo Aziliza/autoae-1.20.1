@@ -40,7 +40,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modCompileOnly "appeng:appliedenergistics2-fabric:VERSION"
+	modCompileOnly "appeng:appliedenergistics2-fabric:15.3.6"
 }
 
 processResources {
