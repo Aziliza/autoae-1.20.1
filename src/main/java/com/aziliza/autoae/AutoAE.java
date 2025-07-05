@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.aziliza.autoae.item.ModItems;
+
 public class AutoAE implements ModInitializer {
 	public static final String MOD_ID = "autoae";
 
@@ -19,6 +21,7 @@ public class AutoAE implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItems.registerModItems();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
