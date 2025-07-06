@@ -1,3 +1,8 @@
+/*
+ * @Author: qianyu
+ * @Date: 2025-07-05 11:54:44
+ * @LastEditTime: 2025-07-06 15:10:49
+ */
 package com.aziliza.autoae;
 
 import net.fabricmc.api.ModInitializer;
@@ -5,6 +10,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.aziliza.autoae.item.ModItemGroups;
 import com.aziliza.autoae.item.ModItems;
 
 public class AutoAE implements ModInitializer {
@@ -22,6 +28,7 @@ public class AutoAE implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.registerModItems();
+		ModItemGroups.registerModItemGroups();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
